@@ -1,22 +1,44 @@
 import random
-letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
 
-print("Welcome to the PyPassword Generator!")
-nr_letters= int(input("How many letters would you like in your password?\n")) 
-nr_symbols = int(input(f"How many symbols would you like?\n"))
-nr_numbers = int(input(f"How many numbers would you like?\n"))
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
 
-password=""
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
 
-for i in range(1,nr_letters+1):
-  password+=random.choice(letters)
-for i in range(1,nr_symbols+1):
-  password+=random.choice(symbols)
-for i in range(1,nr_numbers+1):
-  password+=random.choice(numbers)
-# password=random.shuffle(password)
-print(f"Your password is {password}")
+#Write your code below this line 👇
 
+user_choice=int(input("What do you choose ? Type 0 for Rock, 1 for paper ,2 for scissor \n"))
+computer_choice =random.randint(0,2)
 
+if(user_choice==0 and computer_choice==1):
+  print("Computer Wins ")
+elif(user_choice==1 and computer_choice==2):
+  print("Computer Wins ")
+elif(user_choice==2 and computer_choice==0):
+  print("Computer Wins ")
+elif(user_choice==computer_choice):
+  print("Try Again")
+else:
+  print("User Wins")
+  
