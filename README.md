@@ -14,3 +14,5 @@ Day 4- Rock Paper Scissor
 Day 5- Password Generator 
 
 Day 6- Escaping the Maze
+
+Day 7- Hangman
