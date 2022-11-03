@@ -21,4 +21,4 @@ Day 8-Caesor Cipher
 
 Day 9-Secret Auction
 
-Day 10-Secret Auction
+Day 10-Calculator
